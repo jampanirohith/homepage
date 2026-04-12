@@ -35,8 +35,8 @@ body {
 
 .profile-photo img {
     width: 150px;
-    height: 150px;
-    border-radius: 50%;
+    height: 200px;
+    border-radius: 0%;
     object-fit: cover;
     background-color: #e0e0e0;
     border: 2px solid #ccc;
@@ -144,7 +144,6 @@ p {
     margin-bottom: 10px;
 }
 
-
 .cert-link {
     display: inline-block;
     margin-top: 5px;
@@ -173,4 +172,54 @@ p {
         margin-left: 0;
         padding: 30px 20px;
     }
+}
+
+
+.submenu {
+    display: none;
+    list-style-type: none;
+    padding-left: 15px;
+}
+
+.submenu.open {
+    display: block;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+    user-select: none;
+    color: #0056b3;
+}
+
+.dropdown-toggle:hover {
+    color: #0056b3;
+}
+
+.sem-link {
+    display: inline-block;
+    margin-top: 5px;
+    color: #0056b3; 
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.sem-link:hover {
+    text-decoration: underline;
+    color: #003d82;
+}
+
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 6px;
+}
+.tag-list span {
+  font-size: 12.5px;
+  background: #e8f0fe;
+  color: #1a73e8;
+  padding: 3px 10px;
+  border-radius: 3px;
+  border: 1px solid #c5d8f5;
 }

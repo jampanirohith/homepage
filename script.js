@@ -1,3 +1,8 @@
+function toggleMenu() {
+    const menu = document.getElementById('semester-list');
+    menu.classList.toggle('open');
+}
+
 document.addEventListener('DOMContentLoaded', () => {
 
     const navLinks = document.querySelectorAll('#nav-links a');
@@ -17,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById(targetId).classList.add('active');
             
             window.scrollTo({ top: 0, behavior: 'smooth' });
+
         });
     });
 });

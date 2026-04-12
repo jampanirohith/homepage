@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jampani Rohith</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 </head>
 <body>
     <div class="container">
@@ -20,6 +21,7 @@
                     <li><a href="#" data-target="education">Education</a></li>
                     <li><a href="#" data-target="skills">Skills</a></li>
                     <li><a href="#" data-target="work">Work Experience</a></li>
+                    <li><a href="#" data-target="projects">Projects</a></li>
                     <li><a href="#" data-target="courses">Courses & Certifications</a></li>
                     <li><a href="#" data-target="contact">Contact</a></li>
                 </ul>
@@ -32,6 +34,17 @@
                 <h2>About Me</h2>
                 <p>Welcome to my academic portal. I am a student currently pursuing my degree in BS-MS - Dual Degree in Mathematics at IISER Thiruvanathapuram. I am passionate about learning, research, and applying academic concepts to real-world problems.</p>
                 <p>Feel free to browse my educational background, skills, and the various projects and certifications I have completed during my studies.</p>
+
+                <h2 class="sh">Areas of Interest</h2>
+                    <div class="tag-list">
+                        <span>Web Development</span>
+                        <span>Machine Learning</span>
+                        <span>Data Structures &amp; Algorithms</span>
+                        <span>Cloud Computing</span>
+                        <!-- <span>Mobile Development</span>
+                        <span>Open Source</span>
+                        <span>Competitive Programming</span> -->
+                    </div>
             </section>
 
             <section id="education" class="section">
@@ -41,31 +54,36 @@
                     <h3>BS-MS in Mathematics</h3>
                     <p class="subtitle">IISER Thiruvanathapuram, Kerala </p>
                     <p class="date">July 2024 - Present (Expected Graduation: May 2029)</p>
-                    <ul>
-                        <li>Courses:
-                            <ul>
-                                <li>Semester-1</li>
-                                <li>Semester-2</li>
-                                <li>Semester-3</li>
-                            </ul>
-                        </li>
-                    </ul>
+                         <div class="menu-container">
+                            <a class="dropdown">
+                                <a class="dropdown-toggle" onclick="toggleMenu()">[Courses]</a>
+                                <ul id="semester-list" class="submenu">
+                                    <li><a href="courses/semester1.html" target="_blank" class="sem-link">Semester-1</a></li>
+                                    <li><a href="courses/semester2.html" target="_blank" class="sem-link">Semester-2</a></li>
+                                    <li><a href="courses/semester3.html" target="_blank" class="sem-link">Semester-3</a></li>
+                                    <li><a href="courses/semester4.html" target="_blank" class="sem-link">Semester-4</a></li>
+                                </ul>
+                            </a>  
+                        </div>
+                <a href="documents/iisermemo.pdf" target="_blank" class="cert-link">[Certification]</a>
                 </div>
 
                 <div class="item">
                     <h3>Intermediate</h3>
                     <p class="subtitle">Resonance Junior College, Warangal</p>
                     <p class="date">2022 - 2024</p>
+                        <a href="documents/intermediatememo.pdf" target="_blank" class="cert-link">[Certification]</a>
                 </div>
-                <a href="documents/intermediatememo.pdf" target="_blank" class="cert-link">[Certification]</a>
+
 
 
                 <div class="item">
                     <h3>Higher Secondary</h3>
                     <p class="subtitle">Montessori High School, Bhupalpalle</p>
                     <p class="date">2012 - 2022</p>
+                        <a href="documents/classxmemo.pdf" target="_blank" class="cert-link">[Certification]</a>
                 </div>
-                <a href="documents/classxmemo.pdf" target="_blank" class="cert-link">[Certification]</a>
+                
 
             </section>
 
@@ -100,6 +118,23 @@
                 </div>
             </section>
 
+            <section id="projects" class="section">
+                <h2>Projects</h2>
+                <div class="item">
+                    <h3>Linear Programming Visualization</h3>
+                    <p class="subtitle">Python</p>
+                    <a href="https://github.com/jampanirohith/Linear-Programming-Illustrator" target="_blank" class="cert-link">[Project Link]</a>
+                    <p class="date">28-03-2026</p>
+                </div>
+
+                <div class="item">
+                    <h3>Data Visualization: Holocaust Jewish Casualties</h3>
+                    <p class="subtitle">Python</p>
+                    <a href="https://github.com/jampanirohith/Data-Visualisation-Holocaust-Jewish-Casualties" target="_blank" class="cert-link">[Project Link]</a>
+                    <p class="date">05-03-2026</p>
+                </div>
+            </section>
+
             <section id="courses" class="section">
                 <h2>Courses & Certifications</h2>
                 <p>Additional training and online courses I have completed alongside my formal education.</p>
@@ -126,6 +161,20 @@
                     <li><strong>Email:</strong> <a href="mailto:jampanirohithchowdary@gmail.com" class="cert-link">jampanirohithchowdary@gmail.com</a></li>
                     <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/jampanirohith" target="_blank" class="cert-link">linkedin.com/in/jampanirohith</a></li>
                     <li><strong>GitHub:</strong> <a href="https://github.com/jampanirohith" target="_blank" class="cert-link">github.com/jampanirohith</a></li>
+                    <li><strong>Phone:</strong> +91 6305 189755</li>
+                    <li><strong>Address:</strong> Warangal, Telangana</li>
+                    <!-- <li><strong>Twitter:</strong> <a href="https://twitter.com/jampanirohith" target="_blank" class="cert-link">@jampanirohith</a></li> -->
+                    <li><strong>Facebook:</strong> <a href="https://www.facebook.com/profile.php?id=61555699535513" target="_blank" class="cert-link">facebook.com/jampanirohith</a></li>
+                    <li><strong>Instagram:</strong> <a href="https://instagram.com/jampaniro_hith" target="_blank" class="cert-link">@jampaniro_hith</a></li>
+                    <li><strong>Personal Website:</strong> <a href="https://jampanirohith.com" target="_blank" class="cert-link">jampanirohith.com</a></li>
+                    <!-- <li><strong>Skype:</strong> <a href="skype:jampanirohith?chat" class="cert-link">jampanirohith</a></li>
+                    <li><strong>WhatsApp:</strong> <a href="https://wa.me/911234567890" target="_blank" class="cert-link">+91 12345 67890</a></li>
+                    <li><strong>Telegram:</strong> <a href="https://t.me/jampanirohith" target="_blank" class="cert-link">@jampanirohith</a></li>
+                    <li><strong>Medium:</strong> <a href="https://medium.com/@jampanirohith" target="_blank" class="cert-link">medium.com/@jampanirohith</a></li>   -->
+                    <li><strong>Stack Overflow:</strong> <a href="https://stackoverflow.com/users/32610801/jampani-rohith" target="_blank" class="cert-link">stackoverflow.com/users/32610801/jampani-rohith</a></li>
+                    <!-- <li><strong>ResearchGate:</strong> <a href="https://www.researchgate.net/profile/Jampani_Rohith" target="_blank" class="cert-link">researchgate.net/profile/Jampani_Rohith</a></li>
+                    <li><strong>ORCID:</strong> <a href="https://orcid.org/0000-0001-2345-6789" target="_blank" class="cert-link">orcid.org/0000-0001-2345-6789</a></li>
+                    <li><strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=1234567" target="_blank" class="cert-link">scholar.google.com/citations?user=1234567</a></li> -->
                 </ul>
             </section>
 
@@ -133,5 +182,6 @@
     </div>
 
     <script src="script.js"></script>
+    
 </body>
 </html>
