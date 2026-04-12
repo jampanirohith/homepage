@@ -9,7 +9,7 @@ body {
     font-family: "Segoe UI", Arial, sans-serif;
     color: #333;
     line-height: 1.6;
-    background-color: #ffffff; /* Plain white background */
+    background-color: #ffffff;
 }
 
 .container {
@@ -20,7 +20,7 @@ body {
 /* Sidebar Styling */
 .sidebar {
     width: 280px;
-    background-color: #f8f9fa; /* Very light gray */
+    background-color: #f8f9fa;
     padding: 30px 20px;
     border-right: 1px solid #e0e0e0;
     position: fixed;
@@ -83,20 +83,19 @@ nav ul li a.active {
     color: #000;
 }
 
-/* Main Content Styling */
 .content {
-    margin-left: 280px; /* Offset for fixed sidebar */
+    margin-left: 280px;
     padding: 50px;
     max-width: 900px;
     width: 100%;
 }
 
 .section {
-    display: none; /* Hidden by default */
+    display: none;
 }
 
 .section.active {
-    display: block; /* Shown when active */
+    display: block;
     animation: fadeIn 0.4s ease-in-out;
 }
 
@@ -117,7 +116,6 @@ p {
     margin-bottom: 15px;
 }
 
-/* Item Formatting (for jobs, education, courses) */
 .item {
     margin-bottom: 30px;
 }
@@ -146,11 +144,11 @@ p {
     margin-bottom: 10px;
 }
 
-/* Links for Certificates */
+
 .cert-link {
     display: inline-block;
     margin-top: 5px;
-    color: #0056b3; /* Standard link blue */
+    color: #0056b3; 
     text-decoration: none;
     font-size: 0.9em;
 }
@@ -160,7 +158,6 @@ p {
     color: #003d82;
 }
 
-/* Responsive for smaller screens */
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
