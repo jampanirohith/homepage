@@ -70,7 +70,7 @@ nav ul li a {
     display: block;
     padding: 10px 15px;
     border-radius: 4px;
-    transition: background 0.2s, font-weight 0.2s;
+    transition: background 0.2s, font-weight 0.2s, color 0.2s;
 }
 
 nav ul li a:hover {
@@ -157,24 +157,68 @@ p {
     color: #003d82;
 }
 
+/* --- MOBILE TABS & RESPONSIVENESS --- */
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
     }
+    
     .sidebar {
         width: 100%;
         height: auto;
         position: relative;
         border-right: none;
-        border-bottom: 1px solid #e0e0e0;
+        padding-bottom: 0; /* Remove bottom padding to stick tabs to the bottom of sidebar */
     }
+    
     .content {
         margin-left: 0;
         padding: 30px 20px;
     }
+
+    /* Transform the navigation into horizontal tabs */
+    nav ul#nav-links {
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        white-space: nowrap;
+        padding: 0;
+        margin: 15px 0 0 0;
+        border-bottom: 1px solid #e0e0e0;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+
+    nav ul#nav-links::-webkit-scrollbar {
+        display: none; /* Hide scrollbar for Chrome, Safari, Opera */
+    }
+
+    nav ul#nav-links li {
+        margin-bottom: 0; /* Remove vertical spacing */
+    }
+
+    nav ul#nav-links li a {
+        display: inline-block;
+        padding: 12px 20px;
+        border-radius: 0; /* Remove rounded corners */
+        background-color: transparent; /* Remove desktop background */
+        font-weight: 500;
+        border-bottom: 3px solid transparent;
+    }
+
+    nav ul#nav-links li a:hover {
+        background-color: transparent;
+        color: #0056b3;
+    }
+
+    nav ul#nav-links li a.active {
+        background-color: transparent;
+        color: #0056b3;
+        border-bottom: 3px solid #0056b3;
+    }
 }
 
-
+/* Submenu & Dropdown styles */
 .submenu {
     display: none;
     list-style-type: none;
@@ -208,13 +252,14 @@ p {
     color: #003d82;
 }
 
-
+/* Tag List styles */
 .tag-list {
   display: flex;
   flex-wrap: wrap;
   gap: 7px;
   margin-top: 6px;
 }
+
 .tag-list span {
   font-size: 12.5px;
   background: #e8f0fe;
