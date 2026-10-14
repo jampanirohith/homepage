@@ -211,50 +211,56 @@ p {
     border: 1px solid #c5d8f5;
 }
 
-/* GitHub projects grid */
+/* GitHub projects — simple list matching the Education section */
 .github-projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.25rem;
-    margin-top: 1.25rem;
+    display: block;
+    margin-top: 0;
 }
 
-/* Individual repository card */
 .github-project-card {
-    display: flex;
-    flex-direction: column;
-    padding: 1.25rem;
-    border: 1px solid var(--border-color, #dddddd);
-    border-radius: 12px;
-    background: var(--card-background, transparent);
+    display: block;
+    margin-bottom: 30px;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
     color: inherit;
     min-width: 0;
     overflow-wrap: anywhere;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.github-project-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 }
 
 .github-project-card h3 {
-    margin: 0 0 0.75rem;
-    font-size: 1.1rem;
+    margin: 0 0 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #222;
 }
 
+/* Repository name looks like the headings in Education */
+.github-project-card h3 a {
+    color: #222;
+    text-decoration: none;
+}
+
+.github-project-card h3 a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Links use the same blue as the existing certification links */
 .github-project-card a {
-    color: var(--link-color, #2563eb);
+    color: #0056b3;
     text-decoration: none;
 }
 
 .github-project-card a:hover {
     text-decoration: underline;
+    color: #003d82;
 }
 
 .github-project-description {
     line-height: 1.6;
-    flex-grow: 1;
+    margin-bottom: 10px;
     overflow-wrap: anywhere;
 }
 
@@ -262,21 +268,22 @@ p {
     display: flex;
     flex-wrap: wrap;
     gap: 0.75rem;
-    font-size: 0.875rem;
-    opacity: 0.8;
+    color: #777;
+    font-size: 0.9em;
+    margin-bottom: 10px;
 }
 
 .github-project-links {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    margin-top: 0.75rem;
-    font-size: 0.9rem;
+    margin-top: 5px;
+    font-size: 0.9em;
 }
 
 #github-projects-status {
-    margin: 0.75rem 0;
-    opacity: 0.8;
+    margin: 0 0 25px;
+    color: #777;
 }
 
 @media (max-width: 768px) {
@@ -338,8 +345,3 @@ p {
     }
 }
 
-@media (max-width: 600px) {
-    .github-projects-grid {
-        grid-template-columns: 1fr;
-    }
-}
