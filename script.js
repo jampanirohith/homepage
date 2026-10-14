@@ -1,4 +1,3 @@
-// Function for handling the education dropdown menu
 function toggleMenu() {
     const menu = document.getElementById('semester-list');
     menu.classList.toggle('open');
